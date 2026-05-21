@@ -1,8 +1,8 @@
 import "../../css/modal.css";
 
-import QuantitySelector from "./QuantitySelector.jsx";
+import QuantitySelector from "./quantityselector.jsx";
 import { useState } from "react";
-import { useCart } from "../cart/useCart.jsx";
+import { useCart } from "../cart/usecart.jsx";
 import Modal from "../ui/modal.jsx";
 
 const ProductModal = ({

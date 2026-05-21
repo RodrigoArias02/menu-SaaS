@@ -2,9 +2,9 @@ import HeroBanner from "../home/herobanner.jsx";
 import Categories from "../home/categories.jsx";
 import MenuSection from "../home/menusection.jsx";
 import TicketInfo from "../ticket/ticketInfo.jsx";
-import ButtonCart from "../cart/ButtonCart.jsx";
+import ButtonCart from "../cart/buttoncart.jsx";
 
-import { useCart } from "../cart/useCart.jsx";
+import { useCart } from "../cart/usecart.jsx";
 
 import Modal from "../ui/modal.jsx";
 const Container = ({
