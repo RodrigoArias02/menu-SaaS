@@ -1,16 +1,16 @@
 import "../../css/modal.css";
 
 import QuantitySelector
-from "./QuantitySelector.jsx";
+from "./quantityselector.jsx";
 
 import { useState }
 from "react";
 
 import { useCart }
-from "../cart/useCart.jsx";
+from "../cart/usecart.jsx";
 
 import Modal
-from "../ui/Modal.jsx";
+from "../ui/modal.jsx";
 
 const ProductModal = ({
   isOpen,

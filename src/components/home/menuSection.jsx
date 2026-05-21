@@ -2,8 +2,8 @@ import { useState } from "react";
 
 import "../../css/menu.css";
 
-import ProductList from "./ProductList.jsx";
-import ProductModal from "../product/ProductModal.jsx";
+import ProductList from "./productList.jsx";
+import ProductModal from "../product/productmodal.jsx";
 
 const MenuSection = ({ activeModal, setActiveModal }) => {
   const [selectedProduct, setSelectedProduct] = useState(null);

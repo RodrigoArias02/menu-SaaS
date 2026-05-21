@@ -1,6 +1,6 @@
 import "../../css/categories.css"
 import { useState } from "react"
-import CategoryItem from "./CategoryItem.jsx"
+import CategoryItem from "./categoryItem.jsx"
 
 import empanadasImg from "../../assets/icons/empanada.png"
 import canastitasImg from "../../assets/icons/pie.png"
