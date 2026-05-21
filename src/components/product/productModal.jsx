@@ -1,7 +1,7 @@
 import "../../css/modal.css";
 
 import QuantitySelector
-from "./quaintitySelector.jsx";
+from "./QuantitySelector.jsx";
 
 import { useState }
 from "react";
@@ -10,7 +10,7 @@ import { useCart }
 from "../cart/useCart.jsx";
 
 import Modal
-from "../ui/modal.jsx";
+from "../ui/Modal.jsx";
 
 const ProductModal = ({
   isOpen,

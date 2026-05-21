@@ -1,6 +1,6 @@
 import { useCart } from "../cart/useCart.jsx";
-import ItemTicket from "./itemTicket.jsx";
-import ResumenTicket from "./resumenTicket.jsx";
+import ItemTicket from "./ItemTicket.jsx";
+import ResumenTicket from "./ResumenTicket.jsx";
 import "../../css/ticket.css"
 const TicketInfo = () => {
 

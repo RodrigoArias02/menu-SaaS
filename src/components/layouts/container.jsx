@@ -1,11 +1,11 @@
-import HeroBanner from "../home/herobanner.jsx";
-import Categories from "../home/categories.jsx";
-import MenuSection from "../home/menuSection.jsx";
-import TicketInfo from "../ticket/ticketInfo.jsx";
-import ButtonCart from "../cart/buttonCartFixed.jsx";
+import HeroBanner from "../home/Herobanner.jsx";
+import Categories from "../home/Categories.jsx";
+import MenuSection from "../home/MenuSection.jsx";
+import TicketInfo from "../ticket/TicketInfo.jsx";
+import ButtonCart from "../cart/ButtonCart.jsx";
 
 import { useCart } from "../cart/useCart.jsx";
-import Modal from "../ui/modal.jsx";
+import Modal from "../ui/Modal.jsx";
 const Container = ({
   activeModal,
   setActiveModal
