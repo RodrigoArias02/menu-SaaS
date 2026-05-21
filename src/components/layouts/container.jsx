@@ -1,7 +1,7 @@
 import HeroBanner from "../home/herobanner.jsx";
 import Categories from "../home/categories.jsx";
 import MenuSection from "../home/menusection.jsx";
-import TicketInfo from "../ticket/ticketInfo.jsx";
+import TicketInfo from "../ticket/ticketinfo.jsx";
 import ButtonCart from "../cart/buttoncart.jsx";
 
 import { useCart } from "../cart/usecart.jsx";
