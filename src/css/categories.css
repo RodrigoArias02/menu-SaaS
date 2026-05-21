@@ -1,0 +1,54 @@
+.categories-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #2D2E33;
+}
+.category-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.category-item .category-image{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #12130B;
+    border: none;
+    border-radius: 50%;
+    padding:10px;
+}
+.active{
+border-color: rgba(223, 182, 109, 0.3); /* Mantenemos el borde dorado sutil */
+
+    
+    background: linear-gradient(
+        to bottom, 
+        rgba(223, 182, 109, 0.25) 0%,   /* Arranca con un 25% de dorado arriba */
+        rgba(223, 182, 109, 0.05) 80%,  /* Se desvanece casi por completo a la mitad */
+        #12130B 100%                    /* Termina en el negro puro abajo */
+    );
+}
+.category-item .category-image img{
+    width:100%;
+}
+.category-link{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    outline: none;
+   -webkit-tap-highlight-color: transparent;
+   
+}
+

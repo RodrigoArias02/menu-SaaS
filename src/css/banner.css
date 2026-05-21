@@ -1,0 +1,14 @@
+.rounded-3xl{
+    margin-top: 1rem;
+}
+.rounded-3xl img{
+    width: 100%;    
+    border-radius: 1.5rem;
+}
+.swiper-pagination-bullet {
+  background-color: #45434350;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+}

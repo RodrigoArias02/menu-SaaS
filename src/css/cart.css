@@ -1,0 +1,100 @@
+/* Contenedor flotante centrado */
+.container-button-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: 40px; /* Separado del borde inferior de la pantalla */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 400px; /* Tamaño ideal para que se vea compacto como en la foto */
+    z-index: 1000;
+}
+
+/* Solapa superior "Ver pedido" */
+.button-top {
+    background: #1C1C1E;
+    border: 1px solid rgba(200, 169, 107, 0.4);
+    border-bottom: none; /* Para que ensamble limpio con lo de abajo */
+    border-radius: 16px 16px 0 0; /* Solo redondeado arriba */
+    padding: 6px 24px;
+    width: 200px; /* Un poco más angosto que la base */
+    text-align: center;
+}
+
+.button-top span {
+    color: #c8a96b; /* Tu tipografía dorada */
+    font-family: 'Cinzel', Georgia, serif; /* La fuente elegante */
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Caja principal inferior (El Botón) */
+.button-bottom {
+    width: 100%;
+    height: 64px;
+    background: #1C1C1E;
+    
+
+    border: 1px solid rgba(200, 169, 107, 0.5);
+    border-radius: 24px; /* Bordes redondeados integrales */
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    cursor: pointer;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    margin-top: -1px; /* Solapa un píxel para que no se vea luz entre las dos piezas */
+}
+
+/* Círculo dorado con el número */
+.cart-badge-circle {
+    width: 38px;
+    height: 38px;
+    background: #c8a96b;
+    color: #000000;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4px;
+}
+
+/* Línea divisoria del medio */
+.cart-divider {
+    width: 1px;
+    height: 64px;
+    background: rgba(200, 169, 107, 0.6);
+    position: absolute;
+    left: 70px; /* Ajustado para que encuadre al lado del círculo */
+}
+
+/* Contenedor derecho: Icono + Precio */
+.cart-price-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 12px;
+}
+
+.cart-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    /* Un pequeño filtro opcional por si el PNG original es blanco y querés volverlo dorado */
+    /* filter: sepia(1) saturate(5) hue-rotate(10deg); */
+}
+
+.cart-price-text {
+    color: #c8a96b;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}

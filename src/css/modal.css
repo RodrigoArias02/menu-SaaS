@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Cormorant+Garamond:wght@500&display=swap');
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+
+  background-color: rgba(0, 0, 0, 0.7);
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  z-index: 999;
+}
+
+.modal-content {
+  width: 100%;
+  max-width: 500px;
+
+  background-color: #1f1f1f;
+
+  border-radius: 30px 30px 0 0;
+
+  overflow: hidden;
+
+  animation: modalUp 0.3s ease;
+}
+
+.modal-image {
+  width: 100%;
+  height: 250px;
+
+  object-fit: cover;
+}
+
+.modal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;    
+    padding: 10px 20px;
+  
+}
+.modal-info p{
+    font-size: .9rem;
+    color:#c0c2c4;
+    width: 100%;
+    text-align: start;
+}
+.modal-info h2{
+  margin:0;
+  margin-bottom: 5px; 
+  font-family: 'Cinzel', 'Cormorant Garamond', serif;
+  font-weight: 500;
+  color: #dfb66d; /* El dorado del diseño */
+   font-size: 1.4rem;
+   text-align: start;
+   width: 100%;
+}
+.modal-info h3{
+  margin: 5px;
+}
+.modal-close {
+  position: absolute;
+  color: white;
+  top: 20px;
+  right: 20px;
+
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: rgba(0,0,0,0.5);
+
+ 
+
+  cursor: pointer;
+}
+
+.modal-button {
+  width: 100%;
+
+  margin-top: 20px;
+  padding: 14px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 14px;
+
+background: linear-gradient(
+  90deg,
+  #b58d49 0%,
+  #f3d484 45%,
+  #e6c06d 60%,
+  #b99350 100%
+);
+
+  color: #1f1f1f;
+border: 1px solid rgba(255,255,255,0.15);box-shadow:
+  0 4px 12px rgba(212, 176, 106, 0.25);
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+@keyframes modalUp {
+
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}

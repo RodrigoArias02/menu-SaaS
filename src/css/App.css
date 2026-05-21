@@ -1,0 +1,19 @@
+*{
+  box-sizing: border-box;
+  
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100dvh;
+  background: linear-gradient(
+    180deg,
+    #1B1C21 0%,
+    #1D1E23 100%
+  );
+  
+}
+.app{
+  padding: 0px 5px;
+}
