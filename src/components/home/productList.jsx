@@ -1,5 +1,5 @@
 import "../../css/menu.css"
-import ProductCard from "./productcard.jsx"
+import ProductCard from "./productCard.jsx"
 
 const ProductList = ({ openModal, products}) => {
 
