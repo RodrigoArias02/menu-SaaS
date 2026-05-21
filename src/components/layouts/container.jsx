@@ -5,7 +5,7 @@ import TicketInfo from "../ticket/ticketInfo.jsx";
 import ButtonCart from "../cart/buttoncart.jsx";
 
 import { useCart } from "../cart/usecart.jsx";
-import Modal from "../ui/Modal.jsx";
+import Modal from "../ui/modal.jsx";
 const Container = ({
   activeModal,
   setActiveModal
