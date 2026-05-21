@@ -3,7 +3,7 @@ import {
   useState
 } from "react"
 
-import { CartContext }from "./CartContext.jsx"
+import { CartContext } from "./cartContext.jsx"
 
 export const CartProvider = ({
   children

@@ -1,7 +1,7 @@
 import { useState } from "react"
 
-import Header from "./components/layouts/Header.jsx"
-import Container from "./components/layouts/Container.jsx"
+import Header from "./components/layouts/header.jsx"
+import Container from "./components/layouts/container.jsx"
 import "./css/miapp.css"
 
 function App() {
