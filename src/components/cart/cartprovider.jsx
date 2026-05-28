@@ -37,24 +37,24 @@ export const CartProvider = ({
     const existingProduct = cart.find(
       item => item.id === product.id
     )
-
+    
     if (existingProduct) {
-
+      console.log(searchInCart(product.id), "Product already in cart, increasing quantity")
       setCart(
         cart.map(item =>
-
+         
           item.id === product.id
+          
             ? {
                 ...item,
-                quantity:
-                  item.quantity + quantity
+                quantity: quantity
               }
             : item
         )
       )
 
     } else {
-
+      console.log("else")
       setCart([
         ...cart,
         {
@@ -116,6 +116,13 @@ export const CartProvider = ({
     0
   )
 
+  const searchInCart = (id) => {
+
+    return cart.find(
+      item => item.id === id
+    )
+  }
+
   return (
     <CartContext.Provider
       value={{
@@ -124,6 +131,7 @@ export const CartProvider = ({
         removeFromCart,
         increaseQuantity,
         decreaseQuantity,
+        searchInCart,
         total
       }}
     >

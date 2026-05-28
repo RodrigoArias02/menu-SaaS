@@ -11,7 +11,6 @@ const Container = ({
   activeModal,
   setActiveModal
 }) => {
-
   const { cart, total } = useCart();
 
   const totalItems = cart.reduce(
@@ -32,6 +31,7 @@ const Container = ({
         <MenuSection
           activeModal={activeModal}
           setActiveModal={setActiveModal}
+
         />
 
         <ButtonCart
@@ -45,7 +45,10 @@ const Container = ({
           isOpen={activeModal === "cart"}
           onClose={() => setActiveModal(null)}
         >
-          <TicketInfo/>
+          <TicketInfo
+       
+
+          />
 
         </Modal>
       </main>

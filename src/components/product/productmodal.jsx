@@ -5,14 +5,12 @@ import { useState } from "react";
 import { useCart } from "../cart/usecart.jsx";
 import Modal from "../ui/modal.jsx";
 
-const ProductModal = ({
-  isOpen,
-  onClose,
-  product,
-}) => {
-  const { addToCart, total } = useCart();
-
-  const [quantity, setQuantity] = useState(1);
+const ProductModal = ({ isOpen, onClose, product }) => {
+  const { addToCart, total, searchInCart  } = useCart();
+  
+  let productInCart = searchInCart(product?.id);
+  var initialQuantity = productInCart ? productInCart.quantity : 1;
+  const [quantity, setQuantity] = useState(initialQuantity);
 
   const increase = () => {
     setQuantity((prev) => prev + 1);
@@ -20,11 +18,13 @@ const ProductModal = ({
 
   const decrease = () => {
     if (quantity === 1) return;
+    console.log("Decreasing quantity", quantity - 1);
     setQuantity((prev) => prev - 1);
   };
 
-  if (!product) return null;
-
+  if(!product) return null;
+  
+ 
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
       <img
@@ -47,11 +47,11 @@ const ProductModal = ({
         <button
           className="modal-button"
           onClick={() => {
-            addToCart(product, quantity);
+              addToCart(product, quantity);
             onClose();
           }}
         >
-          Agregar a mi pedido {" "}$
+          Agregar a mi pedido $
           {(total + product.price * quantity).toLocaleString()}
         </button>
       </div>
@@ -60,4 +60,3 @@ const ProductModal = ({
 };
 
 export default ProductModal;
-
